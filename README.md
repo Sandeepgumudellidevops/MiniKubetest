@@ -1,0 +1,2 @@
+# MiniKubetest
+Hello world application 
