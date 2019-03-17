@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-basic
+  labels:
+    app: hello
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-world-basic
+  template:
+    metadata:
+      labels:
+        app: hello-world-basic
+    spec:
+      containers:
+      - name: hello-world-basic
+        image: hello-world-basic:v1
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
