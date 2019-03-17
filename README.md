@@ -12,4 +12,4 @@ kubectl create -f deployment.yaml
 
 kubectl expose deployment hello-world-basic --type=LoadBalancer --port=8080
 
-minikube service hello-world-basic ```
+minikube service hello-world-basic
